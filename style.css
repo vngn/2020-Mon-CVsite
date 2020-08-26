@@ -1,0 +1,414 @@
+@charset "UTF-8";
+/* DOCUMENT INFORMATION
+    - Document: Site CV en ligne
+    - Version : 1.0.1 du 06/06/2020
+    - Auteur: Vincent NGUYEN- 06/06/2020 
+*/
+/* COLORS
+    - default body text     black
+    - h1                    black
+    - h2                    black
+    - h3                    black
+    - h4                    black
+    - p                     black
+    - icon                  black            
+    - border:               $border      
+*/
+/* FONTS
+    - Default:              'acmeregular'
+*/
+/* CSS DIRECTORY
+    0.  GLOBAL
+            - bases SASS
+
+    1. ACCUEIL / INDEX
+
+    2. MES PRODUCTIONS
+
+    3. MES COMPETENCES
+            - page compétences
+
+    4. MON EXPERIENCE ET 5. MA FORMATION
+            - page formation
+
+    x. INFORMATIONS COMPLEMENTAIRES
+
+    x. MAJ
+
+    x. FOOTER
+*/
+/* ============================== 0. GLOBAL ============================== */
+/* bases SASS */
+/* fin SASS */
+/* Background et effets dédiés aux pages */
+.bg00 {
+  background-image: url(ressources/img/bg00.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+/* - */
+h1,
+h2,
+h3 {
+  text-align: center;
+  font-family: "acme", sans-serif;
+  padding-top: 0.5rem;
+}
+
+h4 {
+  text-align: center;
+  font-family: "acme", sans-serif;
+  margin: 8px 0;
+}
+
+div,
+li {
+  font-family: "acme", sans-serif;
+  font-size: 1.1rem;
+}
+div ul,
+li ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+div a,
+li a {
+  font-size: 1.2rem;
+}
+
+header,
+section {
+  width: 95%;
+  margin: auto;
+}
+
+div,
+footer {
+  opacity: 0.9925;
+  transition: 2s;
+}
+div:hover,
+footer:hover {
+  opacity: 1;
+  transition: 1s;
+}
+div .col-md-3,
+footer .col-md-3 {
+  max-width: 49%;
+  margin: 0.65rem auto;
+  padding: 0;
+}
+div .col-md-6,
+footer .col-md-6 {
+  max-width: 49%;
+  margin: 0.65rem auto;
+  padding: 0;
+}
+@media all and (max-width: 1024px) {
+  div .col-md-6,
+footer .col-md-6 {
+    min-width: 99%;
+  }
+}
+div .col-md-12,
+footer .col-md-12 {
+  max-width: 99%;
+  margin: 0.65rem auto;
+}
+div .bloc-production,
+footer .bloc-production {
+  max-width: 72.7%;
+  margin: 0.65rem auto;
+  padding: 10px;
+  border: 2px solid goldenrod;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.zone {
+  border: 2px solid goldenrod;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.mots-cles-nav {
+  font-weight: bold;
+  color: black;
+}
+
+.mots-cles {
+  font-weight: bold;
+  text-shadow: 0 0 3px goldenrod;
+}
+
+.mots-cles-competences {
+  text-shadow: 0 0 3px goldenrod;
+}
+
+header {
+  margin-top: 6.75rem;
+}
+
+i {
+  margin: 0 20px;
+}
+
+.navbar {
+  padding: 0;
+  margin: auto;
+}
+.navbar .moi {
+  margin-right: 1rem;
+}
+
+.navbar-nav .nav-link {
+  padding-left: 10px;
+}
+
+.zone-nav {
+  border: 2px solid goldenrod;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+:target {
+  padding-top: 5.5em;
+  margin-top: -5.5em;
+}
+
+.mes-prod {
+  font-weight: bold;
+  text-shadow: 0 0 3px goldenrod;
+}
+
+/* ============================== 1. ACCUEIL / INDEX ============================== */
+.ville {
+  font-size: 1.2rem;
+}
+
+.lien-cv {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.offre {
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  line-height: 3rem;
+}
+
+/* ============================== 2. MES PRODUCTIONS ============================== */
+.wip1 {
+  border: 2px solid goldenrod;
+  width: 35%;
+  height: 35%;
+}
+
+.wip2 {
+  border: 2px solid goldenrod;
+  width: 25%;
+  height: 25%;
+}
+
+img {
+  height: 42px;
+  margin: 9.5px 9.5px;
+}
+
+.image-base-de-travail {
+  width: 30%;
+  height: 30%;
+  border: 2px solid goldenrod;
+}
+
+/* ============================== 3. MES COMPETENCES ============================== */
+.mes-competences {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* ============================== PAGE COMPETENCES ============================== */
+.bloc-competences {
+  margin: auto;
+}
+.bloc-competences li {
+  text-align: left;
+}
+
+.competences-d-avant {
+  background-color: rgba(235, 235, 235, 0.993);
+  transition: 2s;
+}
+.competences-d-avant:hover {
+  opacity: 1;
+  transition: 1s;
+}
+
+/* ============================== 4. MON EXPERIENCE & 5. MA FORMATION ============================== */
+.td-date {
+  width: 160px;
+  padding-left: 25px;
+}
+
+.td-date-droite {
+  width: 120px;
+  padding-left: 25px;
+}
+
+.td-date1 {
+  width: 160px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
+
+.td-date2 {
+  width: 120px;
+  padding-bottom: 0.5rem;
+  padding-left: 25px;
+}
+
+.td-date2b {
+  padding-bottom: 0.5rem;
+}
+
+.zone1 {
+  margin: 0 auto;
+}
+
+/* ============================== PAGE FORMATION ============================== */
+.bloc12-formation {
+  max-width: 99%;
+  margin: 0.5rem auto;
+}
+
+.bloc4-formation {
+  max-width: 32%;
+  border: 2px solid goldenrod;
+  background-color: white;
+  border-radius: 5px;
+  margin: 0.5rem auto;
+  padding: auto;
+  max-height: 700px;
+}
+@media all and (max-width: 1024px) {
+  .bloc4-formation {
+    min-width: 99%;
+  }
+}
+
+/* ============================== x. INFORMATIONS COMPLEMENTAIRES ============================== */
+.zone2 {
+  margin: 1.3rem auto 0;
+}
+
+/* ============================== x. MAJ ============================== */
+.bloc12-maj {
+  max-width: 99%;
+  margin: 0.5rem auto;
+}
+
+.bloc4-maj {
+  max-width: 32%;
+  border: 2px solid goldenrod;
+  background-color: white;
+  border-radius: 5px;
+  margin: 0.5rem auto;
+  padding: auto;
+  max-height: 700px;
+}
+@media all and (max-width: 1024px) {
+  .bloc4-maj {
+    min-width: 99%;
+  }
+}
+
+/* ============================== x. FOOTER ============================== */
+footer {
+  margin-top: 15px;
+  border: 2px solid goldenrod;
+  background-color: white;
+  padding: 0.6rem 0;
+  text-align: center;
+}
+
+/* ============================== x. FORMAT PDF ============================== */
+.pdf {
+  width: 79%;
+  margin: auto;
+}
+.pdf h2 {
+  font-size: 2.9rem;
+}
+.pdf h3 {
+  font-size: 2.2rem;
+}
+.pdf .pdf-header {
+  margin-top: 6rem;
+}
+.pdf .img-pdf {
+  height: 50px;
+  margin: 9.5px 11.3px;
+}
+.pdf .pdf-mes-competences {
+  font-size: 1.6rem;
+  font-style: italic;
+}
+.pdf .pdf-mots-cles {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-shadow: 0 0 3px goldenrod;
+}
+.pdf li,
+.pdf td {
+  font-size: 1.4rem;
+}
+.pdf .pdf-td-date {
+  width: 180px;
+  padding-left: 25px;
+}
+.pdf .pdf-td-date1 {
+  width: 180px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
+.pdf .pdf-td-date2 {
+  width: 180px;
+  padding-bottom: 0.5rem;
+  padding-left: 25px;
+}
+.pdf .pdf-nom {
+  font-size: 2rem;
+}
+.pdf .pdf-navbar-coordonnees {
+  font-size: 2.4rem;
+}
+.pdf .pdf-navbar {
+  font-size: 1.6rem;
+}
+.pdf .pdf-offre {
+  font-size: 1.8rem;
+  font-style: italic;
+  text-align: center;
+  line-height: 3rem;
+}
+.pdf .pdf-ville {
+  font-size: 1.6rem;
+}
+.pdf .pdf-lien-cv {
+  font-size: 1.6rem;
+}
+.pdf .pdf-footer {
+  font-size: 1.6rem;
+}
+
+/*# sourceMappingURL=style.css.map */
